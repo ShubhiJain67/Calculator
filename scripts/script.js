@@ -1,19 +1,34 @@
+/*-----------------------------------------------------------------------------------------*/
+/*                                        VARIABLES                                        */
+/*-----------------------------------------------------------------------------------------*/
+
+var a,result,op,remove=false;
+
+
+/*-----------------------------------------------------------------------------------------*/
+/*                                         HISTORY                                         */
+/*-----------------------------------------------------------------------------------------*/
+
 
 function displayHistory(){
-    var history=document.getElementById("history").innerHTML;
-    if(history==""){
-        history="<p>No history yet!</p>";
+    if(document.getElementById("history").innerHTML==""){
+        document.getElementById("history").innerHTML="<p>No history yet!</p>";
     }
     if(document.getElementById("history").style.display=="none"){
         document.getElementById("history").style.display="block";
     }else{
         document.getElementById("history").style.display="none";
-        if(history=="<p>No history yet!</p>"){
-            history="";
+        if(document.getElementById("history").innerHTML=="<p>No history yet!</p>"){
+            document.getElementById("history").innerHTML="";
         }
     }
 }
-var a,result,op,remove=false;
+
+
+/*-----------------------------------------------------------------------------------------*/
+/*                                          INPUT                                          */
+/*-----------------------------------------------------------------------------------------*/
+
 function addVal(text) {
     if(remove){
         document.getElementById("inp").value = text;
@@ -41,6 +56,12 @@ function clearLast() {
         document.getElementById("inp").value = inpFieldVal;
     }
 }
+
+
+/*-----------------------------------------------------------------------------------------*/
+/*                                      CALCULATION                                        */
+/*-----------------------------------------------------------------------------------------*/
+
 function operate(operator) {
     num=Number(document.getElementById("inp").value);
     document.getElementById("inp").value="";
