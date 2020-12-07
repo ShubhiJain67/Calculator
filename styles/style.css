@@ -1,0 +1,74 @@
+:root{
+    --btnHeight:50px;
+}
+body{
+    position: relative;
+}
+#calculator-outer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 500px;
+    margin-top: 50px;
+}
+#calculator{
+    width: 498px;
+    padding: 20px;
+    border:2px solid black;
+}
+#history-tab{
+    width: 100%;
+    color: #007bff;
+    margin-bottom: 0px;
+}
+#history-tab h3{
+    /* float: left; */
+    font-size: x-large;
+}
+#history-tab h3 span i{
+    /* float: right; */
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #007bff;
+    border-radius: 2px;
+}
+#history{    
+    display: none;
+    position: relative;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    text-align: right;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+#inp{
+    width: 100%;
+    height: var(--btnHeight);
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    color: #007bff;
+    font-size: x-large;
+    text-align: right;
+}
+.btn{
+    width: 100px;
+    height: var(--btnHeight);
+    margin: 5px;
+}
+
+
+
+.full-width{
+    width: 100%;
+}
+.margin-top{
+    margin: 5px 0px 0px 0px;
+}
+.half-width{
+    width: 47%;
+}
