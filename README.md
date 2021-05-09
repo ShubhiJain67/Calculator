@@ -1,4 +1,6 @@
 # Calculator
+Check it out on : https://shubhijain67.github.io/Calculator/
+
 A basic (2 Operand) calculator website which supports History feature as well.
 
 Technology used : Html, Css, Bootstrap, JavaScript, JQuery
